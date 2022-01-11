@@ -13,7 +13,62 @@
 		C0EFC17F278E19EF003788BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EFC17D278E19EF003788BD /* Main.storyboard */; };
 		C0EFC181278E19F0003788BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EFC180278E19F0003788BD /* Assets.xcassets */; };
 		C0EFC184278E19F0003788BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EFC182278E19F0003788BD /* LaunchScreen.storyboard */; };
+		C0EFC18C278E2622003788BD /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C0EFC18B278E2622003788BD /* TweetSentimentClassifier.mlmodel */; };
+		C0EFC1A0278E2D1A003788BD /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EFC196278E2CE2003788BD /* SwifteriOS.framework */; };
+		C0EFC1A1278E2D1A003788BD /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0EFC196278E2CE2003788BD /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0EFC195278E2CE2003788BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		C0EFC197278E2CE2003788BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		C0EFC199278E2CE2003788BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		C0EFC19B278E2CE2003788BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		C0EFC19D278E2CE2003788BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0EFC1A2278E2D1A003788BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C0EFC1A1278E2D1A003788BD /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C0EFC174278E19EF003788BD /* ML-NLP_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ML-NLP_Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +79,8 @@
 		C0EFC180278E19F0003788BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0EFC183278E19F0003788BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0EFC185278E19F0003788BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0EFC18B278E2622003788BD /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0EFC1A0278E2D1A003788BD /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +98,10 @@
 		C0EFC16B278E19EF003788BD = {
 			isa = PBXGroup;
 			children = (
+				C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */,
 				C0EFC176278E19EF003788BD /* ML-NLP_Demo */,
 				C0EFC175278E19EF003788BD /* Products */,
+				C0EFC19F278E2D1A003788BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +123,28 @@
 				C0EFC180278E19F0003788BD /* Assets.xcassets */,
 				C0EFC182278E19F0003788BD /* LaunchScreen.storyboard */,
 				C0EFC185278E19F0003788BD /* Info.plist */,
+				C0EFC18B278E2622003788BD /* TweetSentimentClassifier.mlmodel */,
 			);
 			path = "ML-NLP_Demo";
+			sourceTree = "<group>";
+		};
+		C0EFC18E278E2CE2003788BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0EFC196278E2CE2003788BD /* SwifteriOS.framework */,
+				C0EFC198278E2CE2003788BD /* SwifterMac.framework */,
+				C0EFC19A278E2CE2003788BD /* SwifterDemoiOS.app */,
+				C0EFC19C278E2CE2003788BD /* SwifterDemoMac.app */,
+				C0EFC19E278E2CE2003788BD /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0EFC19F278E2D1A003788BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +157,7 @@
 				C0EFC170278E19EF003788BD /* Sources */,
 				C0EFC171278E19EF003788BD /* Frameworks */,
 				C0EFC172278E19EF003788BD /* Resources */,
+				C0EFC1A2278E2D1A003788BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +194,56 @@
 			mainGroup = C0EFC16B278E19EF003788BD;
 			productRefGroup = C0EFC175278E19EF003788BD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C0EFC18E278E2CE2003788BD /* Products */;
+					ProjectRef = C0EFC18D278E2CE2003788BD /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C0EFC173278E19EF003788BD /* ML-NLP_Demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C0EFC196278E2CE2003788BD /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = C0EFC195278E2CE2003788BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0EFC198278E2CE2003788BD /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = C0EFC197278E2CE2003788BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0EFC19A278E2CE2003788BD /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = C0EFC199278E2CE2003788BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0EFC19C278E2CE2003788BD /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = C0EFC19B278E2CE2003788BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0EFC19E278E2CE2003788BD /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = C0EFC19D278E2CE2003788BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C0EFC172278E19EF003788BD /* Resources */ = {
@@ -140,6 +265,7 @@
 			files = (
 				C0EFC17C278E19EF003788BD /* ViewController.swift in Sources */,
 				C0EFC178278E19EF003788BD /* AppDelegate.swift in Sources */,
+				C0EFC18C278E2622003788BD /* TweetSentimentClassifier.mlmodel in Sources */,
 				C0EFC17A278E19EF003788BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
